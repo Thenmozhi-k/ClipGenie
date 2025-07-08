@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // State management
-  let apiKey = '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';
+  let apiKey = '';
   let isProcessing = false;
   let selectedExportFormat = '';
 

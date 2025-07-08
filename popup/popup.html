@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ClipGenie Pro</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="lib/html2pdf.bundle.min.js"></script>
+  <script src="lib/FileSaver.min.js"></script></head>
+<body>
+  <div class="container">
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <h1>ClipGenie Pro</h1>
+      <img style="width: 40px; height: 40px;" src="../icons/logo1.png" alt="">
+     
+    </div>   
+
+       <!-- <div class="api-key-section">
+      <input type="password" id="api-key-input" placeholder="Enter OpenRouter API key">
+      <span id="api-status"></span>
+    </div> -->
+    
+    <div class="controls">
+      <select id="format-select">
+        <option value="bullets">Bullet Points</option>
+        <option value="paragraph">Paragraph</option>
+        <option value="tweet">Tweet Thread</option>
+        <option value="linkedin">LinkedIn</option>
+      </select>
+      <button id="summarize-btn">
+        <span>Summarize</span>
+        <span class="loading" id="summarize-loading">⏳</span>
+      </button>
+    </div>
+    
+    <div class="progress-container" id="progress-container">
+      <div id="extraction-progress"></div>
+    </div>
+    <div id="content-length"></div>
+    
+    <div class="output-container">
+      <div id="output" class="output"></div>
+      <button id="copy-btn" class="copy-btn" title="Copy to clipboard">📋</button>
+    </div>
+    <div id="quota-status" class="quota-status"></div>
+    <div class="save-export-container">
+      <button id="save-btn" class="secondary">💾 Save Clip</button>
+      <!-- <select id="export-select" class="export-select">
+        <option value="">Export</option>
+        <option value="pdf">PDF</option>
+        <option value="word">Word</option>
+      </select> -->
+      <button id="export-ok-btn" class="export-ok-btn" style="display: none;">OK</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

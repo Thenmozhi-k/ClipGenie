@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "ClipGenie",
+  "version": "1.0",
+  "description": "AI-powered content summarizer",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/logo.png"
+  },
+  "host_permissions": [
+    "<all_urls>",
+    "*://router.huggingface.co/*",
+    "*://models.github.ai/*"
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "optional_permissions": [
+    "clipboardRead"  
+  ],
+  "background": {
+
+    "type": "module"  
+  },
+ "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}

@@ -1,0 +1,123 @@
+body {
+  width: 400px;
+  padding: 15px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.controls {
+  display: flex;
+  gap: 8px;
+}
+select, button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+}
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+button.secondary {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+.output-container {
+  position: relative;
+}
+.output {
+  min-height: 100px;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  padding: 5px;
+}
+.quota-status {
+  font-size: 0.8em;
+  color: #6b7280;
+}
+.progress-container {
+  width: 100%;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  margin: 5px 0;
+  display: none;
+}
+#extraction-progress {
+  height: 5px;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  width: 0%;
+}
+#content-length {
+  font-size: 0.8em;
+  color: #6b7280;
+  text-align: right;
+}
+.output ul {
+  padding-left: 20px;
+  margin: 10px 0;
+  list-style-type: none;
+}
+.output li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  position: relative;
+}
+.output li:before {
+  content: "•";
+  color: #3b82f6;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.output strong {
+  color: #1e40af;
+}
+.save-export-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.export-select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+.export-ok-btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
